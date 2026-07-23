@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ReceptAI — Your 24/7 AI Voice Receptionist for Local Service Businesses. Never miss a customer call again. HVAC, Plumbing, Roofing and more." />
+  <title>ReceptAI — AI Voice Receptionist for Local Businesses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo" id="nav-logo">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="16" fill="url(#logoGrad)"/>
+          <path d="M10 12c0-3.314 2.686-6 6-6s6 2.686 6 6v4c0 1.105-.895 2-2 2h-1v2h-6v-2h-1c-1.105 0-2-.895-2-2v-4z" fill="white" fill-opacity="0.9"/>
+          <rect x="14" y="24" width="4" height="3" rx="1" fill="white" fill-opacity="0.7"/>
+          <rect x="11" y="27" width="10" height="1.5" rx="0.75" fill="white" fill-opacity="0.7"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+              <stop offset="0%" stop-color="#3b82f6"/>
+              <stop offset="100%" stop-color="#8b5cf6"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Recept<span class="logo-accent">AI</span></span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="dashboard.html" class="btn btn-ghost" id="nav-login">Sign In</a>
+        <a href="#pricing" class="btn btn-primary" id="nav-start">Start Free Trial</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="container">
+      <div class="hero-badge" id="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Live AI Receptionist — Answering Calls Right Now</span>
+      </div>
+      <h1 class="hero-title" id="hero-title">
+        Never Miss a<br/>
+        <span class="gradient-text">Customer Call</span><br/>
+        Again — Ever.
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        ReceptAI is a 24/7 AI voice receptionist built for local service businesses.
+        It answers calls, books appointments, and qualifies leads — so you can focus on the job.
+      </p>
+      <div class="hero-actions" id="hero-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg" id="hero-cta-primary">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          Start Free Trial — 14 Days
+        </a>
+        <a href="dashboard.html" class="btn btn-ghost btn-lg" id="hero-cta-demo">
+          View Live Demo Dashboard →
+        </a>
+      </div>
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat">
+          <span class="stat-num">98%</span>
+          <span class="stat-label">Call Answer Rate</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">3x</span>
+          <span class="stat-label">More Booked Jobs</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">$0</span>
+          <span class="stat-label">Cost Per Missed Call</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated phone mockup -->
+    <div class="hero-visual" id="hero-visual">
+      <div class="phone-frame">
+        <div class="phone-notch"></div>
+        <div class="call-screen">
+          <div class="call-avatar">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <p class="call-name">John D. — HVAC Repair</p>
+          <p class="call-time" id="call-timer">00:42</p>
+          <div class="wave-bars">
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <p class="call-status">AI Receptionist is speaking…</p>
+          <div class="call-transcript">
+            <p class="transcript-bubble ai">"Hello! Thank you for calling Metro HVAC. I'm your AI assistant. Are you looking to schedule a service?"</p>
+            <p class="transcript-bubble user">"Yes, my AC stopped working."</p>
+            <p class="transcript-bubble ai typing">"Got it! I can book you for tomorrow at 9 AM or 2 PM. Which works best?"</p>
+          </div>
+        </div>
+        <div class="phone-actions">
+          <div class="ph-btn ph-red">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M17.73 13.73a2 2 0 00-2.82-.12l-1.26 1.16a15.58 15.58 0 01-4.42-4.42l1.16-1.26a2 2 0 00-.12-2.82L7.6 3.6a2 2 0 00-2.82.12C1.6 6.96 3.1 13.16 8.05 18.11s11.15 6.45 14.39 3.27a2 2 0 00.12-2.82l-2.83-2.83z"/></svg>
+          </div>
+          <div class="ph-btn ph-mute">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          </div>
+        </div>
+      </div>
+      <div class="notification-pop" id="notif-pop">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <span>Appointment booked automatically!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGOS / TRUST BAR ===== -->
+  <section class="trust-bar">
+    <div class="container">
+      <p class="trust-label">Trusted by local service businesses across North America</p>
+      <div class="trust-logos">
+        <div class="trust-logo"><span>🔧</span> Metro HVAC</div>
+        <div class="trust-logo"><span>🚿</span> ProPlumb Co.</div>
+        <div class="trust-logo"><span>🏠</span> RoofRight</div>
+        <div class="trust-logo"><span>⚡</span> Spark Electric</div>
+        <div class="trust-logo"><span>🌿</span> GreenLawn Pro</div>
+        <div class="trust-logo"><span>🔑</span> QuickLock 24</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURES ===== -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2>Everything your receptionist does — <span class="gradient-text">without the salary</span></h2>
+        <p>ReceptAI handles your front desk around the clock, learning your business and handling calls exactly the way you would.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card feature-card--large" id="feat-1">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          </div>
+          <h3>24/7 Call Answering</h3>
+          <p>Your AI picks up every single call — nights, weekends, holidays. No voicemail, no missed revenue.</p>
+          <div class="feature-highlight">
+            <span class="hl-badge">💰 Avg. $380 saved per missed call</span>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feat-2">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Smart Scheduling</h3>
+          <p>Books appointments directly into your calendar. Syncs with Google Calendar, Calendly, and more.</p>
+        </div>
+
+        <div class="feature-card" id="feat-3">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3>Lead Qualification</h3>
+          <p>Asks the right questions to qualify leads before passing them to you — so you only talk to hot prospects.</p>
+        </div>
+
+        <div class="feature-card" id="feat-4">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Custom Voice & Script</h3>
+          <p>We configure the AI to sound exactly like your brand. Choose voice tone, greeting, FAQs, and more.</p>
+        </div>
+
+        <div class="feature-card" id="feat-5">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Real-Time Dashboard</h3>
+          <p>See every call, transcript, booked job, and lead in one place. Know exactly what your AI said and did.</p>
+        </div>
+
+        <div class="feature-card feature-card--large" id="feat-6">
+          <div class="feature-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Instant SMS Follow-Up</h3>
+          <p>After every call, your AI automatically sends a confirmation text to the customer with appointment details, business info, and a review link.</p>
+          <div class="feature-highlight">
+            <span class="hl-badge">⭐ +2.1 Google stars on average</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2>Up and running in <span class="gradient-text">under 48 hours</span></h2>
+        <p>We handle the entire setup. You just forward your phone number and start getting booked.</p>
+      </div>
+      <div class="steps">
+        <div class="step" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-content">
+            <h3>We Build Your AI</h3>
+            <p>We configure a custom AI receptionist with your business name, services, FAQs, availability, and pricing.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-content">
+            <h3>Forward Your Number</h3>
+            <p>Simply forward your existing phone number to your dedicated ReceptAI line. Takes 60 seconds. No tech needed.</p>
+          </div>
+        </div>
+        <div class="step-connector"></div>
+        <div class="step" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-content">
+            <h3>Watch Jobs Roll In</h3>
+            <p>Every call gets answered, every lead gets qualified, every appointment gets booked — automatically, 24/7.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Reviews</span>
+        <h2>Businesses love their <span class="gradient-text">AI Receptionist</span></h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card" id="test-1">
+          <div class="stars">★★★★★</div>
+          <p>"I used to miss 30% of my calls because I was on the job. Since ReceptAI, I haven't missed a single one. Last month was my best month ever — $28K in new bookings."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#3b82f6,#8b5cf6)">MR</div>
+            <div>
+              <strong>Mike Rodriguez</strong>
+              <span>Metro HVAC — Dallas, TX</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card" id="test-2">
+          <div class="stars">★★★★★</div>
+          <p>"My wife used to answer all my calls. Now the AI does it — professionally, every time. My customers think I have a whole office team. Game changer."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#22c55e,#3b82f6)">DT</div>
+            <div>
+              <strong>Dave Thompson</strong>
+              <span>DT Plumbing — Chicago, IL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card testimonial-card--featured" id="test-3">
+          <div class="stars">★★★★★</div>
+          <p>"ROI was instant. I pay $297/month and it booked $11,000 in jobs in the first week. The AI sounds so natural, customers ask to speak to 'her' again."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: linear-gradient(135deg,#f59e0b,#ef4444)">SL</div>
+            <div>
+              <strong>Sarah L.</strong>
+              <span>RoofRight Solutions — Phoenix, AZ</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Simple Pricing</span>
+        <h2>One flat monthly fee. <span class="gradient-text">No surprises.</span></h2>
+        <p>Cancel anytime. 14-day free trial on all plans. No credit card required to start.</p>
+      </div>
+      <div class="pricing-toggle" id="pricing-toggle">
+        <button class="toggle-btn active" id="monthly-btn" onclick="showMonthly()">Monthly</button>
+        <button class="toggle-btn" id="annual-btn" onclick="showAnnual()">Annual <span class="save-badge">Save 20%</span></button>
+      </div>
+      <div class="pricing-grid">
+
+        <div class="price-card" id="plan-starter">
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">Perfect for solo operators</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-num" data-monthly="197" data-annual="158">197</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Up to 200 calls/month</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 24/7 AI Answering</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Calendar Booking</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> SMS Confirmations</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Basic Dashboard</li>
+            <li class="feature-off"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Custom Voice Clone</li>
+            <li class="feature-off"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#64748b" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> CRM Integration</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full" id="start-starter" onclick="openModal('starter')">Start Free Trial</a>
+        </div>
+
+        <div class="price-card price-card--popular" id="plan-pro">
+          <div class="popular-badge">Most Popular</div>
+          <div class="plan-name">Pro</div>
+          <div class="plan-desc">For growing service businesses</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-num" data-monthly="297" data-annual="238">297</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Up to 600 calls/month</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> 24/7 AI Answering</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Smart Scheduling</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Lead Qualification</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Custom Voice Clone</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Full Analytics Dashboard</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> CRM Integration</li>
+          </ul>
+          <a href="#" class="btn btn-primary btn-full" id="start-pro" onclick="openModal('pro')">Start Free Trial</a>
+        </div>
+
+        <div class="price-card" id="plan-agency">
+          <div class="plan-name">Agency</div>
+          <div class="plan-desc">For multi-location businesses</div>
+          <div class="plan-price">
+            <span class="price-currency">$</span>
+            <span class="price-num" data-monthly="597" data-annual="478">597</span>
+            <span class="price-period">/mo</span>
+          </div>
+          <ul class="plan-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Unlimited calls</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Up to 5 locations</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Everything in Pro</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> White-label branding</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority support</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated Account Manager</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> API Access</li>
+          </ul>
+          <a href="#" class="btn btn-outline btn-full" id="start-agency" onclick="openModal('agency')">Start Free Trial</a>
+        </div>
+
+      </div>
+      <p class="pricing-note">All plans include a 14-day free trial. No credit card required. Cancel anytime.</p>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-blob"></div>
+        <h2>Every unanswered call is money left on the table.</h2>
+        <p>Join hundreds of local businesses who stopped missing calls and started scaling.</p>
+        <a href="#" class="btn btn-white btn-lg" id="cta-banner-btn" onclick="openModal('pro')">
+          Start Your Free 14-Day Trial
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+        <p class="cta-sub">No credit card. No contract. Cancel anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="16" fill="url(#logoGrad2)"/>
+              <path d="M10 12c0-3.314 2.686-6 6-6s6 2.686 6 6v4c0 1.105-.895 2-2 2h-1v2h-6v-2h-1c-1.105 0-2-.895-2-2v-4z" fill="white" fill-opacity="0.9"/>
+              <rect x="14" y="24" width="4" height="3" rx="1" fill="white" fill-opacity="0.7"/>
+              <rect x="11" y="27" width="10" height="1.5" rx="0.75" fill="white" fill-opacity="0.7"/>
+              <defs>
+                <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+                  <stop offset="0%" stop-color="#3b82f6"/>
+                  <stop offset="100%" stop-color="#8b5cf6"/>
+                </linearGradient>
+              </defs>
+            </svg>
+            <span>Recept<span class="logo-accent">AI</span></span>
+          </a>
+          <p>Your 24/7 AI Voice Receptionist. Never miss a customer call again.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="dashboard.html">Dashboard Demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#">HVAC</a></li>
+            <li><a href="#">Plumbing</a></li>
+            <li><a href="#">Roofing</a></li>
+            <li><a href="#">Electrical</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 ReceptAI. All rights reserved.</p>
+        <p>Built for local service businesses that mean business.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SIGNUP MODAL ===== -->
+  <div class="modal-overlay" id="modal-overlay" onclick="closeModal()" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="signup-title">
+    <div class="modal" id="modal" onclick="event.stopPropagation()">
+      <button class="modal-close" onclick="closeModal()" aria-label="Close signup form">✕</button>
+      <div class="modal-header">
+        <div class="modal-icon">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.09-1.09a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <h3 id="signup-title">Start Your Free Trial</h3>
+        <p id="modal-plan-text">14 days free • No credit card required</p>
+      </div>
+      <form class="modal-form" id="signup-form" onsubmit="handleSignup(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="John" required />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Smith" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="biz-name">Business Name</label>
+          <input type="text" id="biz-name" placeholder="Metro HVAC" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="john@metroHVAC.com" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required />
+        </div>
+        <div class="form-group">
+          <label for="industry">Industry</label>
+          <select id="industry" required>
+            <option value="">Select your industry…</option>
+            <option>HVAC</option>
+            <option>Plumbing</option>
+            <option>Roofing</option>
+            <option>Electrical</option>
+            <option>Landscaping</option>
+            <option>Locksmith</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full btn-lg" id="modal-submit-btn">
+          Activate My Free Trial →
+        </button>
+        <p class="modal-disclaimer">By signing up you agree to our Terms of Service and Privacy Policy.</p>
+      </form>
+      <div class="modal-success" id="modal-success" style="display:none">
+        <div class="success-icon">🎉</div>
+        <h3>You're in! Welcome to ReceptAI</h3>
+        <p>We'll call you within 2 business hours to configure your AI receptionist. Check your email for next steps.</p>
+        <a href="dashboard.html" class="btn btn-primary btn-full">View Your Dashboard →</a>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
