@@ -31,6 +31,13 @@ npm run preview
 
 The deployable output is generated in `dist/` with both `index.html` and `dashboard.html` entry points.
 
+## Production architecture
+
+The current application is intentionally a frontend demo. The production design and integration plan are documented separately:
+
+- [Architecture](docs/ARCHITECTURE.md) — system boundaries, tenancy, security, data model, event flows, and delivery phases
+- [API and integration guide](docs/API_INTEGRATIONS.md) — required APIs, Synthflow enablement, webhooks, application endpoints, LLM strategy, and MCP usage
+
 ## Productization notes
 
 This repository is a frontend sales demo. To take payments and handle real calls, connect the signup form to your CRM/payment stack and replace the seeded dashboard data with your voice platform’s API and webhooks. Keep credentials in server-side environment variables—never in the browser bundle.
